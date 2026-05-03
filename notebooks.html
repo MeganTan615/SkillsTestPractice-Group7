@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Notebooks — OBMC Student Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="portal-wrapper">
+
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-icon">
+        <i class="bi bi-mortarboard-fill"></i>
+      </div>
+      <div class="sidebar-logo-text">
+        OBMC Portal
+        <span>Student Access</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="sidebar-label">Main</div>
+      <a href="#">
+        <span class="nav-icon"><i class="bi bi-speedometer2"></i></span> Dashboard
+      </a>
+      <a href="notebooks.html" class="active">
+        <span class="nav-icon"><i class="bi bi-journal-bookmark-fill"></i></span> Virtual Notebooks
+      </a>
+      <a href="#">
+        <span class="nav-icon"><i class="bi bi-check2-square"></i></span> Tasks
+      </a>
+      <a href="#">
+        <span class="nav-icon"><i class="bi bi-person-circle"></i></span> Profile
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a href="#" class="btn-logout" onclick="logoutUser()">
+        <i class="bi bi-box-arrow-left"></i> Log Out
+      </a>
+    </div>
+  </aside>
+
+
+  <div class="main-content">
+
+   
+    <div class="page-header">
+      <div class="page-header-badge">NOTEBOOKS</div>
+      <div>
+        <div style="font-weight:600; color:#333; font-size:0.95rem;">Select a subject.</div>
+        <div class="page-header-sub">9-Emerald &nbsp;·&nbsp; AY 2025–2026</div>
+      </div>
+    </div>
+
+   
+    <div class="content-area">
+
+      <div class="notebooks-grid">
+
+       
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+           
+            <img
+              src="img/filipino.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="Filipino Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">Filipino</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Mr. Salazar</div>
+           
+          </div>
+        </div>
+
+      
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+            <img
+              src="img/english.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="English Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">English</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Mr. Alegrid</div>
+            
+          </div>
+        </div>
+
+        
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+            <img
+               src="img/math.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="Math Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">Math</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Ms. Cristobal</div>
+            
+          </div>
+        </div>
+
+        
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+            <img
+              src="img/science.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="Science Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">Science</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Ms. Galang</div>
+            
+          </div>
+        </div>
+
+        
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+            <img
+              src="img/social_studies.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="Social Studies Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">Social Studies</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Mr. Roque</div>
+            
+          </div>
+        </div>
+
+        
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+            <img
+              src="img/values.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="Values Education Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">Values Education</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Mr. Mercado</div>
+            
+          </div>
+        </div>
+
+        
+        <div class="notebook-card">
+          <div class="notebook-img-wrap">
+            <img
+              src="img/ict.jpg"
+              width="400"
+              height="300"
+              fit="crop"
+              alt="ICT Notebook"
+            />
+          </div>
+          <div class="notebook-info">
+            <div class="notebook-subject">ICT</div>
+            <div class="notebook-meta">9-Emerald 2025–2026</div>
+            <div class="notebook-teacher">Mr. Balajadia</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="proj.js"></script>
+<script>
+  checkSession();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OBMC Student Portal — Login</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <div class="login-page">
+
+   
+    <div class="login-card">
+
+
+      <div class="login-logo">
+        <i class="bi bi-mortarboard-fill"></i>
+      </div>
+
+      <h2>Login</h2>
+      <p class="subtitle">O.B. Montessori Center — Student Portal</p>
+
+   
+      <div>
+
+        <label class="form-label" for="username">
+          <i class="bi bi-person-fill"></i> Username
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Enter your username"
+          autocomplete="off"
+        />
+
+
+        <label class="form-label" for="password">
+          <i class="bi bi-lock-fill"></i> Password
+        </label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="••••••••"
+        />
+
+        <div class="d-flex gap-2 mt-2">
+
+          <button class="btn-login" onclick="loginUser()">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Login
+          </button>
+
+          <button
+            onclick="cancelLogin()"
+            style="background:#f0f4f8; color:#555; border:none; border-radius:10px; padding:13px 20px; font-size:0.95rem; cursor:pointer; transition:background 0.2s;"
+            onmouseover="this.style.background='#e0e5ea'"
+            onmouseout="this.style.background='#f0f4f8'"
+          >Cancel</button>
+        </div>
+
+
+        <p class="login-footer-note mt-3">
+          <a href="#" style="color:#aaa; font-size:0.8rem;">Forgot username / password?</a>
+        </p>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="proj.js"></script>
+
+  
+  <script>
+    
+    document.getElementById("password").addEventListener("keydown", function(e) {
+      if (e.key === "Enter") {
+        loginUser();
+      }
+    });
+  </script>
+
+</body>
+</html>
